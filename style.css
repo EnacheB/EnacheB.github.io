@@ -1,0 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #2C3E50;
+    color: #FFF;
+
+}
+
+.box {
+    display: inline-block;
+    text-align: center;
+}

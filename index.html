@@ -57,7 +57,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row" style="padding-top: 10px;">
+            <div class="row" style="padding-top: 10px;" id="FooterRow">
             <div class="col-sm-4 text-center">
                 Github<br>
                 <a href="www.google.com">EnacheB</a>
@@ -79,7 +79,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+
+
+        </script>
     </body>
+        <script>
+        
+          $(document).ready(footerSize)
+          $(window).resize(footerSize)
+                  
+                  function footerSize(){
+        
+           var footerHeight = $('footer').height();
+           var rowHeight = $('#FooterRow').height();
+        
+           if (true) {
+            $('footer').css('height', rowHeight+15);
+            $('body').css('margin-bottom', rowHeight+15);
+           }
+           console.log("Words");
+           console.log(footerHeight);
+           console.log(rowHeight);
+          };
+        </script>
 </html>
 
 

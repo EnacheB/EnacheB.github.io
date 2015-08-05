@@ -29,15 +29,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="index.html">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Experience</a></li>
+                    <li><a href="Bogdan_Enache_Resume.pdf">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="experience.html">Experience</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -50,7 +50,7 @@
                 <img src="http://placehold.it/400x400" alt="Picture of My Face Goes Here" class="img-responsive">
             </div>
             <div class="col-md-9">
-                <p>I am a software developer currently studying Computer Science at the University of Illinois at Urbana-Champaign. My current interests are parallel computing (especially on GPU's) and the application of computing to algorithmic and high frequency trading. I am looking for research opportunities at UIUC during the school year, internships in the industry during summer, and ideas for more content that I could put on this page.</p>
+                <p>I am a software developer currently studying Computer Science at the University of Illinois at Urbana-Champaign. My current interests are parallel computing and the application of computing to algorithmic and high frequency trading. I am looking for research opportunities at UIUC during the school year, internships in the industry during summer, and ideas for more content that I could put on this page.</p>
             </div>
         </div>
     </div>
@@ -60,15 +60,17 @@
             <div class="row" style="padding-top: 10px;" id="FooterRow">
             <div class="col-sm-4 text-center">
                 Github<br>
-                <a href="www.google.com">EnacheB</a>
+                <a href="https://github.com/EnacheB">EnacheB</a>
             </div>
+                <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
             <div class="col-sm-4 text-center">
                 LinkedIn<br>
-                <a href="www.google.com">EnacheB</a>
+                <a href="https://www.linkedin.com/pub/bogdan-enache/a3/b1/a27">EnacheB</a>
             </div>
+                <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
             <div class="col-sm-4 text-center">
                 Email<br>
-                <a href="#">enachebogdan.hahs@gmail.com</a>
+                    <a href="mailto:enache2@illinois.edu">enache2@illinois.edu</a>
             </div>
             </div>
         </div>
@@ -92,14 +94,10 @@
         
            var footerHeight = $('footer').height();
            var rowHeight = $('#FooterRow').height();
+           var extraHeight = 15;
         
-           if (true) {
-            $('footer').css('height', rowHeight+15);
-            $('body').css('margin-bottom', rowHeight+15);
-           }
-           console.log("Words");
-           console.log(footerHeight);
-           console.log(rowHeight);
+            $('footer').css('height', rowHeight+extraHeight);
+            $('body').css('margin-bottom', rowHeight+extraHeight);
           };
         </script>
 </html>
